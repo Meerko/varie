@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#152945" />
+    <meta
+      name="description"
+      content="Demo grafica Nettuno — prodotti professionali per la cura delle mani."
+    />
+    <title>Nettuno | Prodotti professionali per la cura delle mani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="utility-bar">
+        <span></span>
+        <div><a href="./?page=contatti">Download</a><a href="./?page=contatti">FAQ</a><a href="tel:+39035847508">Tel: +39 035 847508</a><a href="mailto:nettuno@nettuno.net">nettuno@nettuno.net</a><b>IT</b></div>
+      </div>
+      <div class="primary-bar">
+        <a class="brand" href="./" aria-label="Nettuno, torna alla homepage">
+          <img src="./assets/logo.svg" alt="Nettuno" />
+        </a>
+        <a class="site-search" href="./?page=prodotti">Cerca prodotto… <span>⌕</span></a>
+        <nav class="product-nav" aria-label="Categorie prodotto">
+          <a href="./?page=prodotti">Mani</a>
+          <a href="./?page=prodotti">Superfici</a>
+          <a href="./?page=prodotti">Disinfettanti</a>
+          <a href="./?page=prodotti">Accessori</a>
+        </nav>
+      </div>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Apri il menu</span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigazione principale">
+        <div class="mobile-categories">
+          <a href="./?page=prodotti">Mani</a>
+          <a href="./?page=prodotti">Superfici</a>
+          <a href="./?page=prodotti">Disinfettanti</a>
+          <a href="./?page=prodotti">Accessori</a>
+        </div>
+        <a href="./">Home</a>
+        <a href="./?page=azienda" data-route="azienda">Azienda</a>
+        <a href="./?page=sostenibilita" data-route="sostenibilita">Sostenibilità</a>
+        <a href="./?page=settori" data-route="settori">Settori</a>
+        <a href="./?page=contatti" data-route="contatti">Contatti</a>
+        <a href="./?page=settori" class="profession-cta">Qual è la tua professione?</a>
+      </nav>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="site-footer">
+      <div class="footer-lead">
+        <p class="eyebrow">Rimani aggiornato</p>
+        <h2>Le mani raccontano<br />il nostro lavoro.</h2>
+        <a class="text-link light" href="./?page=contatti">Parla con i nostri esperti <span>→</span></a>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <img src="./assets/logo.svg" class="footer-logo" alt="Nettuno" />
+          <p>Hygiene starts with hands.</p>
+          <a href="https://www.linkedin.com/company/nettuno-srl/" rel="noreferrer">LinkedIn · YouTube</a>
+        </div>
+        <div>
+          <h3>Nettuno srl</h3>
+          <p>Viale Industria 16/18<br />24060 Castelli Calepio (BG) – Italy</p>
+          <p>+39 035 847508<br />nettuno@nettuno.net</p>
+        </div>
+        <div>
+          <h3>Logistica Italia</h3>
+          <p>Via Lago Iseo 23<br />24060 Chiuduno (BG) – Italy</p>
+          <p>+39 035 847508</p>
+        </div>
+        <div>
+          <h3>Nettuno Iberica sl</h3>
+          <p>Av. Nísperos, 25 Naves 12/13<br />28350 Ciempozuelos – Madrid</p>
+          <p>+34 91 827 41 04<br />nettuno@nettuno.es</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nettuno srl</span>
+        <span>Demo grafica per approvazione</span>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+    <script>
+      window.CHAT_WIDGET_CUSTOMIZATIONS = {
+        locale: "it",
+        title: "Assistente Nettuno",
+        subtitle: "Prodotti, schede tecniche e supporto vendite",
+        greeting: "Ciao, sono Tritone, l'AI Agent Nettuno. Sono qui per supportarti nelle vendite retail: prodotti, schede tecniche, contatti commerciali. Cosa ti serve oggi?",
+        suggestions: [
+          "Quali prodotti per igiene mani?",
+          "Info su disinfettanti superfici",
+          "Come diventare rivenditore"
+        ],
+        placeholder: "Scrivi una domanda…",
+        send: "Invia",
+        mic: "Detta un messaggio",
+        micStop: "Interrompi",
+        cancel: "Annulla",
+        open: "Apri assistente Nettuno",
+        close: "Chiudi assistente",
+        speechBubble: "Ciao, sono Tritone.\nCome posso aiutarti?",
+        hideBubble: "Nascondi il messaggio",
+        reset: "Nuova conversazione",
+        resetConfirm: "Cancellare la conversazione?",
+        resetAccept: "Cancella",
+        listening: "Sto ascoltando",
+        transcribing: "Trascrizione in corso…",
+        tooShort: "Messaggio troppo breve",
+        micError: "Microfono non disponibile",
+        error: "Non riesco a rispondere adesso. Riprova tra poco.",
+        emptyAudio: "Non ho capito. Ripeti la domanda."
+      };
+    </script>
+    <script src="https://ai.original.land/widget/699d61f0672aa8ae6d6a98cb68a489c5048ab76c68158328/script"></script>
+  </body>
+</html>
